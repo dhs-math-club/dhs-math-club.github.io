@@ -1,42 +1,113 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Atkinson Hyperlegible';
+
+}
+
+
+p,h1{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.pageContainer{
+  height: 100%;
+}
+
+.navbar{
+  position: -webkit-sticky; /* Safari */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  height: 64px;
+  margin-top: 0;
+  padding: 8px 24px 8px 24px;
+  gap: 3.5em;
+}
+
+.logo-nav{
+  top: 16px;
+  left: 26px;
+  height: 50px;
+}
+
+.banner{
+  background-image: url("./assets/logocopy2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-clip: padding-box;
+  background-color: #5e9fb9;
+  padding: 30px 0;
+  height: 400px;
   text-align: center;
 }
+.title{
+  position: relative;
+  top: 50%;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  font-size: 100px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+/* #254024 */
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-container{
+  padding: 30px 0;
+  background-color: #5e9fb9;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.links{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 2.5em;
+  font-size: 25px;
+  font-family: 'Atkinson Hyperlegible';
 }
 
-.card {
-  padding: 2em;
+.buttons{
+  margin-left: auto;
+  display: flex;
+  gap: 2em;
+  margin-right: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.amc-button{
+  background-color: transparent;
+  border: 1px solid black;
+  color: dodgerblue;
+  font-family: 'Atkinson Hyperlegible';
+  padding: 6px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  border-color: #2196F3;
+}
+
+.discord-button{
+  background-color: transparent;
+  border: 1px solid black;
+  color: #6c757d;
+  font-family: 'Atkinson Hyperlegible';
+  padding: 6px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  border-color: #6c757d;
+  
+}
+
+.amc-button:hover{
+  background: #2196F3;
+  color: white;
+  cursor: pointer;
+
+}
+
+.discord-button:hover{
+  background: #6c757d;
+  color: white;
+  cursor: pointer;
+
 }

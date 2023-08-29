@@ -2,32 +2,37 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Logo from './assets/logocopy2.png';
+import LogoNoText from './assets/logocopy.png';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+    </style>
+    <div className='pageContainer'>
+      <div className='navbar'>
+        <img className='logo-nav' src={LogoNoText} alt="Logo" />
+
+        <ul className='links'>
+          <li>AMC Signups</li>
+          <li>About Us</li>
+        </ul>
+        <div className='buttons'>
+          <button onClick={(e) => {e.preventDefault();window.location.href='https://forms.gle/t5eBV4xaKTkM6p1Y9';}} className='amc-button'>Signup For AMCs</button>
+          <button onClick={(e) => {e.preventDefault();window.location.href='https://discord.gg/wCZRVq52m7';}} className='discord-button'>Join Discord</button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className='banner-container'>
+        <div className='banner'></div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
+    </div>
+    
     </>
   )
 }
