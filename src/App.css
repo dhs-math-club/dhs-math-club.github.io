@@ -6,6 +6,60 @@
 }
 
 
+.amc-card{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 30px 50px;
+  border-radius: 5px;
+  margin-top: 50px;
+  width: 75%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.hr-amc{
+  color: gray; 
+  border-style: inset; 
+  border-width: 0.5px; 
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.amc-title{
+  margin-bottom: 10px;
+}
+
+.amc-content{
+  font-size: 19px;
+}
+
+.amc-buttons{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.amc-dates{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 50px;
+  margin-top: 19px;
+}
+
+.amc-date{
+  margin: 0;
+  font-size: 19px;
+}
+/* Hover off */
+/* .amc-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+
 p,h1{
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
@@ -38,8 +92,7 @@ p,h1{
   background-size: contain;
   background-position: center;
   background-clip: padding-box;
-  background-color: #5e9fb9;
-  padding: 30px 0;
+  background-color: #388AD7;
   height: 400px;
   text-align: center;
 }
@@ -53,8 +106,16 @@ p,h1{
 
 .banner-container{
   padding: 30px 0;
-  background-color: #5e9fb9;
+  background-color: #388AD7;
+  height: 400px;
+}
 
+.amc-section{
+  background-color: #F0F0F0;
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .links{
@@ -66,6 +127,10 @@ p,h1{
   gap: 2.5em;
   font-size: 25px;
   font-family: 'Atkinson Hyperlegible';
+}
+.nav-links:hover{
+  cursor: pointer;
+  color:#2196F3;
 }
 
 .buttons{
