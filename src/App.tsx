@@ -4,7 +4,7 @@ import {useRef} from 'react';
 
 
 function App() {
-  const amc = useRef(null);
+  const amc = useRef<null | HTMLDivElement>(null);
 
   const handleClick = () => {
     amc.current?.scrollIntoView({behavior: 'smooth'});
@@ -31,7 +31,7 @@ function App() {
         <div className='banner'></div>
       </div>
       <div className='amc-section'>
-        <div ref={ref} className='amc-card'>
+        <div ref={amc} className='amc-card'>
           <h1 className='amc-title'>AMC Signups OPEN</h1>
           <hr className='hr-amc'/>
           <p className='amc-content'>The American Mathematics Competitions are a series of examinations and curriculum materials that build problem-solving skills and mathematical knowledge in middle and high school students. The AMC 10 and AMC 12 are 25-question, 75-minute, multiple-choice examinations in high school mathematics. </p>
